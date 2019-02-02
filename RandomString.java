@@ -2,15 +2,15 @@ import java.util.Random;
 
 public class RandomString {
 
-    static String gen_10_rand(int length) {
+    public static String gen_10_rand(int length) {
         return gen_rand(length, "0123456789");
     }
 
-    static String gen_16_rand(int length) {
+    public static String gen_16_rand(int length) {
         return gen_rand(length, "0123456789abcdef");
     }
 
-    static String gen_base64_rand(int length) {
+    public static String gen_base64_rand(int length) {
         return gen_rand(length, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
     }
 
